@@ -40,7 +40,7 @@ class MaxiParser (object):
 	def search(self, callback, *data):
 		artist = urllib.quote(self.artist)
 		title = urllib.quote(self.title)
-		join = urllib.quote(' - ')
+		join = urllib.quote('-')
 		content = '%s%s%s' % (title, join, artist)
 		path ='https://www.google.com/search?sclient=psy-ab&hl=vi&safe=off&source=hp&q='+content+'+site:maxilyrics.com&pbx=1&oq='+content+'+site:maxilyrics.com&aq=f&aqi=&aql=&gs_sm=e&gs_upl=3203972l3209682l9l3209897l17l17l0l0l0l0l190l1691l14.3l17l0&fp=1&biw=1280&bih=640&cad=b&btnI=1&bav=on.2,or.r_gc.r_pw.r_cp.,cf.osb&tch=1&ech=1&psi=9e8vT5_5OcOaiAfk47i7Dg.1328541646416.3'
 	    	req_headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:6.0) Gecko/20100101 Firefox/6.0','Cookie': 'Hello Google','Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','Accept-Language': 'en-us,en;q=0.5','Accept-Encoding': 'gzip,deflate','Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.7','Connection': 'keep-alive','Referer': 'http://www.google.com/search?sourceid=chrome&ie=UTF-8&q='+content}
@@ -71,6 +71,6 @@ class MaxiParser (object):
 		lyrics = unen.unescape(lyrics)
 		lyrics += "\n\nGet from MaxiLyrics"
 
-		print lyrics
+#		print lyrics
 		
 		return lyrics

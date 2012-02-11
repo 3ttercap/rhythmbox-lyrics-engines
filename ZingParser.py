@@ -41,7 +41,7 @@ class ZingParser (object):
 		path = 'http://mp3.zing.vn/tim-kiem/bai-hat.html'
 		artist = urllib.quote(self.artist)
 		title = urllib.quote(self.title)
-		join = urllib.quote(' - ')
+		join = urllib.quote('-')
 		wurl = '?q=%s%s%s&filter=4&search_type=bai-hat' % (title, join, artist)
 		print "search URL: " + path + wurl
 
@@ -83,6 +83,6 @@ class ZingParser (object):
 		lyrics = re.sub('<[Bb][Rr] />', '', lyrics)
 		lyrics = re.sub('^\\s{1,}','',lyrics)
 		lyrics += "\n\nGet from Zing"
-		print lyrics	
+#		print lyrics	
 		
 		return lyrics
