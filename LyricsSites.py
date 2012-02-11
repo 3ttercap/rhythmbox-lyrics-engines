@@ -31,6 +31,7 @@ from LeoslyricsParser import LeoslyricsParser
 from WinampcnParser import WinampcnParser
 from TerraParser import TerraParser
 from ZingParser import ZingParser
+from MaxiParser import MaxiParser
 
 lyrics_sites = [
 	{ 'id': 'lyrc.com.ar', 		'class': LyrcParser, 		'name': _("Lyrc (lyrc.com.ar)") 		},
@@ -38,8 +39,8 @@ lyrics_sites = [
 	{ 'id': 'leoslyrics.com', 	'class': LeoslyricsParser, 	'name': _("Leo's Lyrics (www.leoslyrics.com)") 	},
 	{ 'id': 'winampcn.com', 	'class': WinampcnParser, 	'name': _("WinampCN (www.winampcn.com)") 	},
 	{ 'id': 'terra.com.br',		'class': TerraParser,		'name': _("TerraBrasil (terra.com.br)")		},
-	{ 'id': 'mp3.zing.vn',		'class': ZingParser,		'name': _("ZingVietNam (mp3.zing.vn)")		}
+	{ 'id': 'mp3.zing.vn',		'class': ZingParser,		'name': _("ZingVietNam (mp3.zing.vn)")		},
+	{ 'id': 'maxilyrics.com',	'class': MaxiParser,		'name': _("MaxiLyrics (MaxiLyrics)")		}
 	
-
 ]
 
