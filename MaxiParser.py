@@ -62,7 +62,6 @@ class MaxiParser (object):
 	def parse_lyrics(self, uRL):
 	   	print "Final URL: ===> " + uRL
 		lyrics = urllib.urlopen(uRL).read()
-		#Co ve la phai lam theo dung cau truc cua no' ?	
 		lyrics = re.split('<div class=\"contentdiv_leftbox_data\">', lyrics)[1] 
 		lyrics = re.split('</div>', lyrics)[0]
 		lyrics = re.sub('<[Bb][Rr] />', '\n', lyrics)
